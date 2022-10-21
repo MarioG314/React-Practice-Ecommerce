@@ -1,5 +1,5 @@
 import React from 'react'
-import CardBasic from './card'
+import CardBasic from './Card'
 
 
 function GroupCards() {
