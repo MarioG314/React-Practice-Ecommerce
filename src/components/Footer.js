@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <Container className="Container mt-auto">
+    <Container fluid className="mt-auto bg-dark bg-opacity-75">
       <div className="row">
         <div className="col-4">
           <img src="./logoNASA.png"></img>
