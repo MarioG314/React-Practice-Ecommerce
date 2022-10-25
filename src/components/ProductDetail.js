@@ -1,19 +1,37 @@
-import React, { useState , useEffect } from "react"
-import { Card } from "react-bootstrap"
+import React from "react";
+import { Row, Col, Card, Container, Button } from "react-bootstrap";
 
-const ProductDetail = (data) => {
+const ProductDetail = ({data}) => {
   return (
-    <>
-      <Card>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-        </Card.Body>
+    <Container>
+      <Card className="border-0">
+        <Row>
+          <Col>
+            <Card.Img variant="top" src={data.image} />
+          </Col>
+          <Col>
+            <Card.Body>
+              <Card.Title>
+                {data.title}
+              </Card.Title>
+              <Card.Text>
+                <div>{data.description}</div>
+              </Card.Text>
+              <Container className="d-flex justify-content-between">
+                <Button variant="dark">Counter</Button>
+                <Card.Text as="h2">${data.price}</Card.Text>
+              </Container>
+              <Container className="d-grid g-2 pt-3">
+                <Button variant="success" size="lg">
+                  Comprar
+                </Button>
+              </Container>
+            </Card.Body>
+          </Col>
+        </Row>
       </Card>
-    </>
-  );}
+    </Container>
+  );
+};
 
-export default ProductDetail
+export default ProductDetail;

@@ -8,13 +8,6 @@ import ProductDetailContainer from '../components/ProductDetailContainer'
 import { Routes, Route} from 'react-router-dom'
 
 const Main = () => {
-  const [data, setData] = useState([])
-  useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
-      .then((res) => res.json())
-      .then((json) => setData(json));
-
-  }, [])
   
   return (
     <>
