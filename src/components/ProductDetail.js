@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { Row, Col, Card, Container, Button } from "react-bootstrap";
 
 const ProductDetail = ({data}) => {
+  const [counterState, setCounterState] = useState(1)
+
+  const add = () =>{
+    setCounterState(counterState + 1)
+  }
+  const sub = () => {
+    // if (counterState > 1) {
+    //   setCounterState(counterState - 1)
+    // }else{}
+    counterState > 1 &&  
+    setCounterState(counterState - 1)
+    
+  }
+
   return (
     <Container>
       <Card className="border-0">
@@ -18,7 +32,9 @@ const ProductDetail = ({data}) => {
                 {data.description}
               </Card.Text>
               <Container className="d-flex justify-content-between">
-                <Button variant="dark">Counter</Button>
+                <Button disabled={counterState > 1 ? false :true} size="sm" variant="danger" onClick={sub}>-</Button>
+                <div className="px-2">{counterState}</div>
+                <Button size="sm" variant="primary" onClick={add}>+</Button>
                 <Card.Text as="h2">${data.price}</Card.Text>
               </Container>
               <Container className="d-grid g-2 pt-3">

@@ -14,7 +14,7 @@ const Main = () => {
     <>
       <Container fluid className="px-0 d-flex flex-column min-vh-100 ">
         <Navbar />
-        {/* <Landing /> */}
+        <Landing />
         <Routes>
           <Route path="/" element={<ProductListContainer />} />
           <Route path="/product/:id" element={<ProductDetailContainer />} />
