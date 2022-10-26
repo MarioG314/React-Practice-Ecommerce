@@ -15,7 +15,7 @@ const ProductDetail = ({data}) => {
                 {data.title}
               </Card.Title>
               <Card.Text>
-                <div>{data.description}</div>
+                {data.description}
               </Card.Text>
               <Container className="d-flex justify-content-between">
                 <Button variant="dark">Counter</Button>
