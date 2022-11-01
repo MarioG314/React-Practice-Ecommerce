@@ -2,11 +2,13 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Landing from "../components/Landing";
 import Footer from "../components/Footer";
-import { Container } from "react-bootstrap";
+import { Container, Form } from "react-bootstrap";
 import ProductListContainer from "../components/ProductListContainer";
 import ProductDetailContainer from '../components/ProductDetailContainer'
 import { Routes, Route} from 'react-router-dom'
 import NotFoudn from "../components/NotFoudn";
+import Register from "../components/Register"
+import Checkout from "../components/Checkout";
 
 const Main = () => {
   
@@ -19,6 +21,8 @@ const Main = () => {
           <Route path="/" element={<ProductListContainer />} />
           <Route path="/product/:id" element={<ProductDetailContainer />} />
           <Route path="*" element={<NotFoudn/>} />
+          <Route path="/form" element={<Register/>} />
+          <Route path="/checkout" element={<Checkout/>}/>
         </Routes>
         <Footer />
       </Container>
