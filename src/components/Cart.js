@@ -3,7 +3,7 @@ import { Card, Button } from "react-bootstrap";
 
 const Cart = () => {
   return (
-    <Card>
+    <Card className='mb-3 mt-3'>
       <Card.Header className='fw-bold'>Cart</Card.Header>
       <Card.Body>
         <Card.Title>Special title treatment</Card.Title>
