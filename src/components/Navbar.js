@@ -17,7 +17,7 @@ const Navbar = () => {
                 height="30"
                 className="d-inline-block align-top"
               />{" "}
-              React Bootstrap
+              Probando Cambios
             </BSNavbar.Brand>
           </Link>
         </Container>
