@@ -13,8 +13,8 @@ const Footer = () => {
         </div>
         <div className="col-4">
           <ul>
-            <li>Numero de telefono</li>
-            <li>Correo electrónico</li>
+            <li>333555777888</li>
+            <li>correo@gmail.com</li>
             <li>Ubicación</li>
             <li>Otro item</li>
           </ul>
