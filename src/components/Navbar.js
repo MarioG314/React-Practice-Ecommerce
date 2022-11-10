@@ -17,7 +17,7 @@ const Navbar = () => {
                 height="30"
                 className="d-inline-block align-top"
               />{" "}
-              Probando Cambios
+              Probando Cambios - github
             </BSNavbar.Brand>
           </Link>
         </Container>
